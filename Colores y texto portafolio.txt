@@ -1,0 +1,8 @@
+COLORES
+
+morado-medio : #7f47dd
+morado-oscuro: #501987
+morado- claro: #af59e2
+fucsia: #ed1e79
+Blanco: #ffffff
+
