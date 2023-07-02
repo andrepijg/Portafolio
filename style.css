@@ -281,35 +281,34 @@ html{
 
 .skills {
     display: flex;
-    margin: 0rem 1.5rem 2rem 1.5rem;
-    
+    margin: 0rem 0rem 1rem 1.5rem;    
 }
 
 .skills-title{
     margin-top: 2rem;
-    margin-left: 1.5rem;
+    margin-left: 0 auto;
 }
 
 .subtitulo{
-    margin-left: 1.5rem;
+   
     font-size: 80%;
     font-family: var(--Poppins);
     color: var(--bg-blanco);
+    background: linear-gradient(90deg, #af59e2 20%,#7f47dd);
+    
 }
 
-.logos-skills{
+.logos-skills-soft, .logos-skills-hard{
     display: flex;    
     height: 150px;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-        
+    justify-content: space-evenly;       
 }
 
 .logos-lista{
     display:flex;
     flex-direction: column;
-    margin: 0.5rem;
     align-items: center;
 }
     
@@ -318,7 +317,7 @@ html{
     height: 3rem;
     background-color: var(--bg-blanco);
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .plogos-skills{
@@ -344,12 +343,16 @@ html{
         margin-top: 2rem;
     }
 
-    .logos-skills{
+    .logos-skills-hard{
         height: 600px;           
     }
     
+    .logos-skills-soft{
+        height:300px;           
+    }
+
     .logos-lista{
-        margin: 2rem;
+        margin: 1.5rem;
     }
         
     .logos-skills-icon{
@@ -366,9 +369,14 @@ html{
     }
 
     @media screen and (min-width: 1024px)  {
-        .logos-skills{
-            height:500px;           
+        .logos-skills-hard{
+            height:400px;           
         }
+
+        .logos-skills-soft{
+            height: 300px;
+        }
+
         .skills-title{
             margin-left: 4rem;
             margin-top: 2rem;
@@ -386,7 +394,13 @@ html{
     }
 
     @media screen and (min-width: 1440px)  {
+        .logos-skills-hard{
+            height:300px;           
+        }
 
+        .logos-skills-soft{
+            height: 150px;
+        }
         .subtitulo{
             font-size: 2rem;
         }
@@ -777,6 +791,7 @@ b{
 
   .sub-footer, .logo-footer{
     margin: 0 auto;
+    background: none;
   }
 
   @media screen and (min-width: 768px){
