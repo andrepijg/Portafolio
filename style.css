@@ -228,7 +228,7 @@ html{
 
 /*SOBRE MI*/
 
-.sobre-mi, .formacion{
+.sobre-mi, .formacion, .seccion-formulario{
     margin: 1.5rem 2rem;
     background-color: var(--bg-blanco);
 }
@@ -284,7 +284,7 @@ html{
 
 .subtitulo{
     margin-left: 1.5rem;
-    font-size: 1rem;
+    font-size: 80%;
     font-family: var(--Poppins);
     color: var(--bg-blanco);
 }
@@ -377,6 +377,14 @@ html{
         }
     }
 
+    @media screen and (min-width: 1440px)  {
+
+        .subtitulo{
+            font-size: 2rem;
+        }
+    }
+
+
     /*FORMACION ACÁDEMICA*/
 
     .div-formacion{
@@ -439,6 +447,10 @@ html{
     .img-certificados {
         width: 100%;
         align-items: center;
+    }
+
+    .descripcion{
+        font-size:0.8rem;
     }
 }
 
@@ -562,7 +574,7 @@ b{
 
   @media screen and (min-width: 1440px) {
     .div-redes, .div-programacion {
-        height: 600px;  
+        height: 800px;  
     }
 
     .lista-redes {
@@ -586,10 +598,169 @@ b{
 
     }
    .texto-programacion {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         }
     
     b{
         font-size: 1.8rem;
+    }
+
+    
+  }
+
+  /*FORMULARIO*/
+
+
+  .juntos, .texto-formulario {
+    text-align: center;
+  }
+
+  .div-formulario 
+
+  .formulario{
+    margin-top: 1.5rem;
+    width: 100%;
+    box-shadow: 
+        inset 0  0em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    align-items: center;
+    border: none;
+    color: var(--bg-morado-oscuro);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--Poppins);
+    font-size: 0.7rem;
+    font-weight: 600;
+
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: var(--Poppins);
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+
+  textarea {
+    height: 100px;
+    
+  }
+
+  #mensaje{
+    font-family: var(--Poppins);
+    font-size: 0.7rem;
+    font-weight: 400;
+
+  }
+
+  input[type="submit"] {
+    background-color:var(--fucsia);
+    color: white;
+    font-family: var(--Poppins);
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    }
+
+  input[type="submit"]:hover {
+    background-color: var(--bg-morado-claro);
+  }
+
+  .button-container{
+    text-align: center;
+
+  }
+
+  @media screen and (min-width: 768px){
+
+    .div-formulario{
+        width: 70%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    label {
+        font-size: 1rem;
+       
+    }
+
+    input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: var(--Poppins);
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+  }
+    
+  }
+
+  @media screen and (min-width: 1440px){
+
+     
+    label {
+        font-size: 1.5rem;
+       
+    }
+
+    input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: var(--Poppins);
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  input[type="submit"] {
+    font-size: 1.5rem;
+  }
+
+  #mensaje{
+    font-size: 1.2rem;
+    
+    
+  }
+  }
+
+  /*footer*/
+
+  .footer{
+    background-color: var(--bg-morado-medio);
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .sub-footer, .logo-footer{
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px){
+
+    .sub-footer{
+        font-size: 1.2rem;
     }
   }
