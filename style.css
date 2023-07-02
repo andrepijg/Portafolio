@@ -12,6 +12,10 @@
 
 }
 
+html{
+    margin:auto;
+}
+
 .encabezado {
     background: linear-gradient(90deg, #501987 20%,#7f47dd);
 }
@@ -33,14 +37,15 @@
     display: flex;
     flex-direction: column; /*por defecto es row (en línea) cuando queramos lo podemos cambiar a column*/
     flex-wrap: wrap; /* quiere decir que cuando llege a los 250px comienza a rellenar en la otra columna  */
-    background: linear-gradient(90deg, #501987 20%,#7f47dd);      
+    background: linear-gradient(90deg, #501987 20%,#7f47dd);
+   
 } 
 
 .titulos-principal{
     margin: 2rem 0 2.5rem 1.5rem;
 }
 
-.titulo {
+.titulo, .titulo-encabezado {
     font-family: var(--Poppins);
     font-size: 1.1rem;
     font-weight: 700;
@@ -48,7 +53,7 @@
     
 }
 
-.titulob{
+.titulob, .titulo-encabezadob{
     color: var(--fucsia);
     
 }
@@ -114,7 +119,8 @@
         margin: 10% 10% 10% 0%;
        }
 
-    .titulo {
+    
+    .titulo, .titulo-encabezado, .titulo-encabezadob   {
         font-size: 1.8rem;
     }
 
@@ -186,10 +192,13 @@
         max-width: 40%;
     }
 
-    .titulo {
+    .titulo-encabezado, .titulo-encabezadob  {
          font-size: 2.2rem;
      }
 
+     .titulo{
+        font-size: 1.8rem;
+     }
      .icon{
         width: 4rem;
     }
@@ -202,19 +211,19 @@
         max-width: 100%;
     }
 
+    .titulo-encabezado, .titulo-encabezadob  {
+        font-size: 3.5rem;
+    }
+    
     .titulo {
-         font-size: 3.5rem;
-     }
-
-     .icon{
+        font-size: 2.5rem;
+    }
+        .icon{
         width: 6rem;
     }
 
     
 }    
-
-       
-    
 
 
 /*SOBRE MI*/
@@ -252,15 +261,11 @@
     }
 }
 
-@media screen and (min-width: 1024px)  {    
+
+
+@media screen and (min-width: 1440px)  {    
     .p-sobre-mi{
         font-size: 150%;
-    }
-}
-
-@media screen and (min-width: 1024px)  {    
-    .p-sobre-mi{
-        font-size: 200%;
     }
 }
 
@@ -356,6 +361,14 @@
         .logos-skills{
             height:500px;           
         }
+        .skills-title{
+            margin-left: 4rem;
+            margin-top: 2rem;
+        }
+        .subtitulo{
+            margin-left: 4rem;
+            font-size: 2rem;
+        }
 
         .skills {
             display: flex;
@@ -371,8 +384,7 @@
     }
     
     .certificados {
-        width: auto;
-        height: auto;
+        width: 100%;        
        justify-content: center;
         background-color: var(--bg-blanco);
         border-radius: 10px;
@@ -407,7 +419,7 @@
 @media screen  and (min-width: 768px){
 
     .div-formacion{
-        height: 400px;
+        height: 500px;
     }
 
     .academica {
@@ -428,21 +440,156 @@
         width: 100%;
         align-items: center;
     }
-
-    
-  
-
-    
 }
 
 
 @media screen  and (min-width: 1440px){
 
-    .descripcion {
-        font-size: 1.5rem;
+    .div-formacion{
+        height: 350px;
     }
     
-  
+    .certificados{
+        width: 30%;
+        height: auto;
+        justify-content: center;
+    }
 
+    .descripcion {
+        font-size: 1.5rem;
+    }     
+}
+
+/*PROYECTOS*/
+
+.div-programacion, .div-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 3rem 2rem 3rem;
+}
+
+.lista-programacion, .lista-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
+.imagen-redes{
+    width: 60%;
+}
+.imagen-programacion{
+    width: 120%;
+    justify-content: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.programacion {
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-programacion {
+    font-family: var(--Poppins);
+    color: var(--bg-blanco);
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+
+
+b{
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .div-redes {
+        display: flex;
+        align-items: center;
+        margin: 0rem 3rem 2rem 3rem;    
+        height: 400px;  
+    }
+
+    .lista-redes {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 300px;
+        justify-content: space-between;
+        align-content: space-around;
+    }   
+    
+    .redes {
+        width: 150%;
+        }
+    
+    .div-programacion {
+        display: flex;
+        align-items: center;
+        margin: 0rem 3rem 2rem 3rem;    
+        height: 400px;  
+        }
+
+    .programacion{
+        width:50%;
+    }
+
+    .lista-programacion{
+        height: 200px;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+    }
+
+    .imagen-programacion{
+        width: 100%;
+        justify-content: center;
+        }
+    
+    .texto-programacion {
+        font-size: 1rem;
+        }
+    
+    b{
+        font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .div-redes, .div-programacion {
+        height: 600px;  
+    }
+
+    .lista-redes {
+        height: 500px;
+        }   
+    
+    .redes {
+        width: 250%;
+        }
+    
+    
+    .programacion{
+        width:50%;
+    }
+
+    .lista-programacion{
+        height: 200px;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+    }
+   .texto-programacion {
+        font-size: 1.2rem;
+        }
+    
+    b{
+        font-size: 1.8rem;
+    }
+  }
