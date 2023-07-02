@@ -414,7 +414,8 @@ html{
         
     }
     
-    .certificados:hover{-webkit-transform:scale(1.3);transform:scale(1.3);}
+    .certificados:hover{-webkit-transform:scale(1.1);
+        transform:scale(1.1);}
 
     .certificados {overflow:hidden;}
 
@@ -514,15 +515,17 @@ html{
 .redes {
     display: flex;
     justify-content: center;
+
 }
 
-.imagen-programacion:hover{-webkit-transform:scale(1.3);transform:scale(1.3);}
+.imagen-programacion:hover{
+    -webkit-transform:scale(1.1);
+     transform:scale(1.1);}
 
-.imagen-programacion {overflow:hidden;}
-
-.programacion {
+.imagen-programacion {
     justify-content: center;
     align-items: center;
+    overflow:hidden;
 }
 
 .texto-programacion {
@@ -531,8 +534,6 @@ html{
     font-size: 0.7rem;
     text-align: center;
 }
-
-
 
 b{
     font-weight: 600;
