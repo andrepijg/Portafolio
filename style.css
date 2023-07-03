@@ -281,16 +281,16 @@ html{
 
 .skills {
     display: flex;
-    margin: 0rem 0rem 1rem 1.5rem;    
+    margin: 0rem 1.5rem 1rem 1.5rem;    
 }
 
 .skills-title{
     margin-top: 2rem;
-    margin-left: 0 auto;
+    margin-left: 1.5rem;
 }
 
 .subtitulo{
-   
+    margin-left: 1.5rem;
     font-size: 80%;
     font-family: var(--Poppins);
     color: var(--bg-blanco);
